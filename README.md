@@ -7,6 +7,20 @@ First time SSH session into a remote host, do this to prevent key error:
 ssh root@<ipv4_address> -o StrictHostKeyChecking=no
 ```
 
+### faillock
+Unlock an SSH user account if it gets "Access Denied" after failed login attempts. View failed users:
+```
+faillock --user <username>
+```
+Reset them:
+```
+faillock --user <username> --reset
+```
+Verify:
+```
+faillock --user <username>
+```
+
 ### tmux
 Create a tmux session with a name:
 ```
