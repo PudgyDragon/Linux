@@ -26,7 +26,7 @@ Create a tmux session with a name:
 ```
 tmux new -s <session_name>
 ```
-Get bac into your tmux session:
+Get back into your tmux session:
 ```
 tmux a -t <session_name>
 ```
